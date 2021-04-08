@@ -1,0 +1,107 @@
+NAME                                               READY   STATUS    RESTARTS   AGE
+pod/batch-service-6c4ffffb8f-gbwfx                 0/1     Pending   0          6d13h
+pod/config-service-7c777dd44b-xslcr                1/1     Running   0          19h
+pod/dl-service-6765f7765b-clhm4                    0/1     Pending   0          6d13h
+pod/dl-view-7dc4f5ccdc-fvns9                       0/1     Pending   0          6d13h
+pod/dms-service-8659dbdcb6-rx2m8                   1/1     Running   0          19h
+pod/ent-service-8678788dc8-wcdlq                   0/1     Running   205        19h
+pod/ent-view-676d5b697b-gqsjz                      0/1     Running   202        19h
+pod/mcsent-66f477cb7b-gglfc                        0/1     Pending   0          6d13h
+pod/mcsirp-9d5468b48-fjxmp                         0/1     Pending   0          6d13h
+pod/miscellaneous-service-9c48c4788-qsf2z          0/1     Running   207        19h
+pod/my-nginx-ingress-controller-77f68859bf-pt4zt   1/1     Running   0          19h
+pod/nginx-ingress-operator-5f4f9c75bf-fs4xt        1/1     Running   0          19h
+pod/redis-master-76c96d7757-mffm5                  1/1     Running   0          19h
+pod/scheduler-service-864648c8d7-fg56h             0/1     Pending   0          6d13h
+pod/scheduler-view-6d8f45c745-f269v                0/1     Pending   0          6d13h
+pod/tnr-service-7f9587894d-6xlcj                   0/1     Running   205        19h
+pod/tnr-view-5c94b99b88-5zpfm                      0/1     Running   207        19h
+pod/uic-service-868d57dcb7-m2k45                   0/1     Running   197        19h
+pod/webportal-view-65b6cd54b-x79z8                 0/1     Running   205        19h
+pod/wf-service-6cc45c48b-pw4xl                     0/1     Pending   0          6d13h
+pod/wf-view-6bc546c54-9wpfq                        0/1     Pending   0          6d13h
+
+NAME                                     TYPE        CLUSTER-IP       EXTERNAL-IP   PORT(S)                      AGE
+service/batch-service                    ClusterIP   172.30.34.93     <none>        80/TCP                       6d13h
+service/config-service                   ClusterIP   172.30.143.254   <none>        9080/TCP                     6d13h
+service/dl-service                       ClusterIP   172.30.89.45     <none>        80/TCP                       6d13h
+service/dl-view                          ClusterIP   172.30.89.207    <none>        80/TCP                       6d13h
+service/dms-service                      ClusterIP   172.30.193.237   <none>        9080/TCP                     6d13h
+service/ent-service                      ClusterIP   172.30.42.83     <none>        9080/TCP                     6d13h
+service/ent-view                         ClusterIP   172.30.232.221   <none>        9080/TCP                     6d13h
+service/mcsent                           ClusterIP   172.30.188.122   <none>        80/TCP                       6d13h
+service/mcsirp                           ClusterIP   172.30.219.147   <none>        80/TCP                       6d13h
+service/miscellaneous-service            ClusterIP   172.30.247.150   <none>        9080/TCP                     6d13h
+service/my-nginx-ingress-controller      NodePort    172.30.45.209    <none>        80:31758/TCP,443:32267/TCP   6d23h
+service/nginx-ingress-operator-metrics   ClusterIP   172.30.80.204    <none>        8383/TCP,8686/TCP            7d2h
+service/redis-master                     ClusterIP   172.30.124.151   <none>        6379/TCP                     14d
+service/scheduler-service                ClusterIP   172.30.219.24    <none>        80/TCP                       6d13h
+service/scheduler-view                   ClusterIP   172.30.161.229   <none>        80/TCP                       6d13h
+service/tnr-service                      ClusterIP   172.30.100.14    <none>        9080/TCP                     6d13h
+service/tnr-view                         ClusterIP   172.30.72.179    <none>        9080/TCP                     6d13h
+service/uic-service                      ClusterIP   172.30.15.73     <none>        9080/TCP                     6d13h
+service/webportal-view                   ClusterIP   172.30.94.176    <none>        9080/TCP                     6d13h
+service/wf-service                       ClusterIP   172.30.193.188   <none>        80/TCP                       6d13h
+service/wf-view                          ClusterIP   172.30.112.227   <none>        80/TCP                       6d13h
+
+NAME                                          READY   UP-TO-DATE   AVAILABLE   AGE
+deployment.apps/batch-service                 0/1     1            0           6d13h
+deployment.apps/config-service                1/1     1            1           6d13h
+deployment.apps/dl-service                    0/1     1            0           6d13h
+deployment.apps/dl-view                       0/1     1            0           6d13h
+deployment.apps/dms-service                   1/1     1            1           6d13h
+deployment.apps/ent-service                   0/1     1            0           6d13h
+deployment.apps/ent-view                      0/1     1            0           6d13h
+deployment.apps/mcsent                        0/1     1            0           6d13h
+deployment.apps/mcsirp                        0/1     1            0           6d13h
+deployment.apps/miscellaneous-service         0/1     1            0           6d13h
+deployment.apps/my-nginx-ingress-controller   1/1     1            1           6d23h
+deployment.apps/nginx-ingress-operator        1/1     1            1           7d2h
+deployment.apps/redis-master                  1/1     1            1           14d
+deployment.apps/scheduler-service             0/1     1            0           6d13h
+deployment.apps/scheduler-view                0/1     1            0           6d13h
+deployment.apps/tnr-service                   0/1     1            0           6d13h
+deployment.apps/tnr-view                      0/1     1            0           6d13h
+deployment.apps/uic-service                   0/1     1            0           6d13h
+deployment.apps/webportal-view                0/1     1            0           6d13h
+deployment.apps/wf-service                    0/1     1            0           6d13h
+deployment.apps/wf-view                       0/1     1            0           6d13h
+
+NAME                                                     DESIRED   CURRENT   READY   AGE
+replicaset.apps/batch-service-6c4ffffb8f                 1         1         0       6d13h
+replicaset.apps/config-service-7c777dd44b                1         1         1       6d13h
+replicaset.apps/dl-service-6765f7765b                    1         1         0       6d13h
+replicaset.apps/dl-view-7dc4f5ccdc                       1         1         0       6d13h
+replicaset.apps/dms-service-8659dbdcb6                   1         1         1       6d13h
+replicaset.apps/ent-service-8678788dc8                   1         1         0       6d13h
+replicaset.apps/ent-view-676d5b697b                      1         1         0       6d13h
+replicaset.apps/mcsent-66f477cb7b                        1         1         0       6d13h
+replicaset.apps/mcsirp-9d5468b48                         1         1         0       6d13h
+replicaset.apps/miscellaneous-service-9c48c4788          1         1         0       6d13h
+replicaset.apps/my-nginx-ingress-controller-77f68859bf   1         1         1       6d23h
+replicaset.apps/nginx-ingress-operator-5f4f9c75bf        1         1         1       7d2h
+replicaset.apps/redis-master-76c96d7757                  1         1         1       14d
+replicaset.apps/scheduler-service-864648c8d7             1         1         0       6d13h
+replicaset.apps/scheduler-view-6d8f45c745                1         1         0       6d13h
+replicaset.apps/tnr-service-7f9587894d                   1         1         0       6d13h
+replicaset.apps/tnr-view-5c94b99b88                      1         1         0       6d13h
+replicaset.apps/uic-service-868d57dcb7                   1         1         0       6d13h
+replicaset.apps/webportal-view-65b6cd54b                 1         1         0       6d13h
+replicaset.apps/wf-service-6cc45c48b                     1         1         0       6d13h
+replicaset.apps/wf-view-6bc546c54                        1         1         0       6d13h
+
+NAME                                                     COMPLETIONS   DURATION   AGE
+job.batch/nginx-ingress-ingress-nginx-admission-create   0/1                      7d2h
+
+NAME                                              HOST/PORT                                                PATH                      SERVICES                PORT   TERMINATION   WILDCARD
+route.route.openshift.io/configserver             configserver-dva-dev01.apps.ocp.mpi.mb.local             /configserver             config-service          9080                 None
+route.route.openshift.io/dl-service               dl-service-dva-dev01.apps.ocp.mpi.mb.local                                         dl-service              80                   None
+route.route.openshift.io/dms-service              dms-service-dva-dev01.apps.ocp.mpi.mb.local              /dms-service              dms-service             9080                 None
+route.route.openshift.io/ent-service              ent-service-dva-dev01.apps.ocp.mpi.mb.local              /ent-service              ent-service             9080                 None
+route.route.openshift.io/ent-view                 ent-view-dva-dev01.apps.ocp.mpi.mb.local                 /ent-view                 ent-view                9080                 None
+route.route.openshift.io/miscellaneous-service    miscellaneous-service-dva-dev01.apps.ocp.mpi.mb.local    /miscellaneous-service    miscellaneous-service   9080                 None
+route.route.openshift.io/miscellaneous-services   miscellaneous-services-dva-dev01.apps.ocp.mpi.mb.local   /miscellaneous-services   miscellaneous-service   9080                 None
+route.route.openshift.io/tnr-service              tnr-service-dva-dev01.apps.ocp.mpi.mb.local              /tnr-service              tnr-service             9080                 None
+route.route.openshift.io/tnr-view                 tnr-view-dva-dev01.apps.ocp.mpi.mb.local                 /tnr-view                 tnr-view                9080                 None
+route.route.openshift.io/uic-service              uic-service-dva-dev01.apps.ocp.mpi.mb.local              /uic-service              uic-service             9080                 None
+route.route.openshift.io/webportal-view           webportal-view-dva-dev01.apps.ocp.mpi.mb.local           /webportal-view           webportal-view          9080                 None
